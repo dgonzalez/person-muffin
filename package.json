@@ -1,0 +1,16 @@
+{
+  "name": "person-muffin",
+  "version": "1.0.0",
+  "description": "Welcome to the workshop! If you have any query please do not hesitate to ask us. We might be busy but... we are here for that. Try to complete it without looking into the code but... if you get stuck or you cannot attend to the full workshop, feel free to poke the code and experiment things.",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/storage": "1.1.0",
+    "@google-cloud/vision": "0.11.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dgonzalez/person-muffin.git"
+  },
+  "author": "David Gonzalez (david.gonzalez@nearform.com",
+  "license": "MIT"
+}

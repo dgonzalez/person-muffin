@@ -1,0 +1,1 @@
+gcloud beta functions deploy helloGET --stage-bucket person-muffin --trigger-bucket source-pictures
