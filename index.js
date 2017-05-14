@@ -1,11 +1,13 @@
 const Vision = require('@google-cloud/vision')
 const Storage = require('@google-cloud/storage')
+const util = require('util')
 
 let storage = Storage()
 let vision = Vision()
 
-// TODO David: this name needs to change
-exports.helloGET = function(event, callback) {
+const VALID_PHOTOS_BUCKET = storage.bucket('valid-photos')
+
+exports.personMuffin = function(event, callback) {
   const data = event.data
 
   if (data.resourceState === 'not_exists') {
@@ -27,9 +29,17 @@ function processFile(file, callback) {
     }
     console.log(`Number of faces: ${faces.length}`)
     console.log(faces)
+    )
+
     if (faces.length === 1) {
-      // Move to another bucket.
+      moveToValid(file, faces, callback)
+    } else {
+      console.log('Skipping')
+      return callback()
     }
-    return callback()
   })
+}
+
+function moveToValid(file, faces, callback) {
+  file.move(VALID_PHOTOS_BUCKET, callback)
 }
