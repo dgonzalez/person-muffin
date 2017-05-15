@@ -1,6 +1,5 @@
 const Vision = require('@google-cloud/vision')
 const Storage = require('@google-cloud/storage')
-const util = require('util')
 
 let storage = Storage()
 let vision = Vision()
