@@ -29,7 +29,6 @@ function processFile(file, callback) {
     }
     console.log(`Number of faces: ${faces.length}`)
     console.log(faces)
-    )
 
     if (faces.length === 1) {
       moveToValid(file, faces, callback)
