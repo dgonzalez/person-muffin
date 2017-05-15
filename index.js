@@ -6,7 +6,7 @@ let vision = Vision()
 
 const VALID_PHOTOS_BUCKET = storage.bucket('valid-photos')
 
-exports.personMuffin = function(event, callback) {
+exports.personMuffin = function (event, callback) {
   const data = event.data
 
   if (data.resourceState === 'not_exists') {
@@ -20,7 +20,7 @@ exports.personMuffin = function(event, callback) {
   }
 }
 
-function processFile(file, callback) {
+function processFile (file, callback) {
   vision.detectFaces(file, (err, faces) => {
     if (err) {
       console.log(err)
@@ -38,6 +38,6 @@ function processFile(file, callback) {
   })
 }
 
-function moveToValid(file, faces, callback) {
+function moveToValid (file, faces, callback) {
   file.move(VALID_PHOTOS_BUCKET, callback)
 }
