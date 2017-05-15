@@ -3,7 +3,7 @@ Welcome to the workshop! If you have any query please do not hesitate to ask us.
 Try to complete it without looking into the code but... if you get stuck or you cannot attend to the full workshop, feel free to poke the code and experiment things.
 
 ## Our objectives
-- Create a cloud function (or several) in order to filter all the images from a Google Cloud Storage bucket so that we move them to another bucket only if there is **only one face** in the picture.
+- Create a cloud function (or several) in order to filter all the images from a Google Cloud Storage bucket so that we move them to another bucket if there is **only one face** in the picture.
 
 - **Bonus**: Move to a different bucket called angry_customers where we will move the pictures with people that are angry.
 
