@@ -5,7 +5,7 @@ Try to complete it without looking into the code but... if you get stuck or you 
 ## Our objectives
 - Create a cloud function (or several) in order to filter all the images from a Google Cloud Storage bucket so that we move them to another bucket if there is **only one face** in the picture.
 
-- **Bonus**: Move to a different bucket called angry_customers where we will move the pictures with people that are angry.
+- **Bonus**: Move the image to a different bucket called angry-customers if the picture has 1 face and it shows anger.
 
 ## Tools
 
