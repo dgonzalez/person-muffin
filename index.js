@@ -11,7 +11,7 @@ exports.personMuffin = function (event, callback) {
 
   if (data.resourceState === 'not_exists') {
     console.log(`File ${data.name} deleted.`)
-    callback()
+    return callback()
   } else {
     const file = storage
                   .bucket(data.bucket)
