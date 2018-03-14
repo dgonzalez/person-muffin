@@ -1,4 +1,4 @@
-# Human or Muffin
+# person-muffin
 Welcome to the workshop! If you have any query please do not hesitate to ask us. We might be busy but... we are here to help.
 Try to complete it without looking into the code but... if you get stuck or you cannot attend to the full workshop, feel free to poke the code and experiment things.
 
