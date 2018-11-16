@@ -1,1 +1,1 @@
-gcloud beta functions deploy personMuffin --stage-bucket person-muffin --trigger-bucket source-pictures
+gcloud functions deploy personMuffin --runtime nodejs6 --trigger-resource uploaded-pictures --trigger-event google.storage.object.finalize

@@ -7,17 +7,11 @@ let vision = Vision()
 const VALID_PHOTOS_BUCKET = storage.bucket('valid-photos')
 
 exports.personMuffin = function (event, callback) {
-  const data = event.data
-
-  if (data.resourceState === 'not_exists') {
-    console.log(`File ${data.name} deleted.`)
-    return callback()
-  } else {
+    const data = event.data
     const file = storage
                   .bucket(data.bucket)
                   .file(data.name)
     processFile(file, callback)
-  }
 }
 
 function processFile (file, callback) {
