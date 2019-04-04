@@ -1,37 +1,37 @@
-const Vision = require('@google-cloud/vision')
-const Storage = require('@google-cloud/storage')
+const util = require('util')
 
-let storage = Storage()
-let vision = Vision()
+const {Storage} = require('@google-cloud/storage');
+
+const vision = require('@google-cloud/vision');
+
+const storage = new Storage()
 
 const VALID_PHOTOS_BUCKET = storage.bucket('valid-photos')
 
 exports.personMuffin = function (event, callback) {
     const data = event.data
-    const file = storage
-                  .bucket(data.bucket)
-                  .file(data.name)
-    processFile(file, callback)
+    processFile(data.bucket, data.name, callback)
 }
 
-function processFile (file, callback) {
-  vision.detectFaces(file, (err, faces) => {
-    if (err) {
-      console.log(err)
-      return callback(err)
-    }
-    console.log(`Number of faces: ${faces.length}`)
-    console.log(faces)
-
-    if (faces.length === 1) {
-      moveToValid(file, faces, callback)
-    } else {
-      console.log('Skipping')
-      return callback()
-    }
-  })
+function processFile (bucket, file, callback) {
+  const client = new vision.ImageAnnotatorClient()
+  client.faceDetection(`gs://${bucket}/${file}`)
+    .then((faces) => {
+      console.log('number of faces', faces.length)
+      if (faces.length === 1) {
+        console.log('moving to valid')
+        moveToValid(bucket, file, faces, callback)
+      } else {
+        console.log('Skipping')
+        return callback()
+      }
+    })
+    .catch((error) => {
+      console.log('Error!!!', error)
+      callback(error)
+    })
 }
 
-function moveToValid (file, faces, callback) {
-  file.move(VALID_PHOTOS_BUCKET, callback)
+function moveToValid (bucket, file, callback) {
+  storage.bucket(bucket).file(file).move(VALID_PHOTOS_BUCKET, callback)
 }

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kubernetes-cafe",
+  "private_key_id": "305a1908abbdea86d9490444adccf12d686a7b59",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCLtyUNrMjrq7EA\nfHcBo76LAw8XksYTxvrQnpQ3m2Nsa3ZKZyw1X8f0DVWuBadGAEnnb0dXDMUBrpr8\nyyvymLK5WnelbNQWIQc0aYGMDyMbM+esKInwTrc0Uwq1W/YvYK4m3dwgljuugJm9\nlIhq/VFLMTAR1cE/NzB/xnYTReuF+QOFQILsWYXPkMXrMchOZKGurKsVqqyXkpWq\nLPD0az6WamRBQdpBYNgcQfEnjubAteWxqN5wIDMoyqkv28OtCu0kLjxPvanaJ63c\nsrBqe2PB+63ThKXJSh7fQFBYj8gEPFclLCcb7nkKG1l37kzSbwDzfhGiYlc4amx5\nhnkGYXtpAgMBAAECggEAATrTKAf2u4+nBDmbWce0gD2wH8rM+F9tsgbJ+euo66Cj\nhg1M0pFWdNAtH6Q0tXjVrbKwahf9mO/U7elRWkuqn0k2isg/pG/jmTT6NAXRTxhZ\nj2MR2cGfLJfe3RCjWj7Lo2jjBXITTnbwQ36t9CoFfFt6LNA8Yb9fFiorvCxqobhF\ntTxpWK1Sc6TjTZ2BtVZeh6fFmwkLJwZVKtsOJJ0GthQRqbo3oBtl8rcNxUiAOly+\nyov5NvBKbxEjiQERPdyycn8GO/+Gfhy9L/22Xh9zmlu/tk3O5chUAlSFtxrCrZr6\nXx9hsJtY+gZdKY5q2DMP05sSpX0fJUdfr0gYY3CsPQKBgQC/p9sk36gOB6lSaCtn\nn9S51rFNp7M1sGKOIDdbLFqajoTgVoC0afbrxhSbsUKVGBFA35zHlbBww5oDv+Kf\nvX7G8ZY4sovy2Y0xvxrvF/qnBBaxhc005SY/awwm4BGi2n/X671rWFf25L2oHdQ2\nQ95uycuQ2vGWLi6+IG0qmYiNrQKBgQC6nzOHWxsnZcbCEm0H7um0+HQbAnTGH+lx\n08AC7RUk4M5FGfWXdBH+PB3Oz1cy8Db2OSukWPLhF3WI71q/2FmhZY4P9LnGWbA1\nQUzLUZ8fUiI+z3CE6EfQH12ybofhq1M1NDErCO/OkeRSZ+j4ljl6zWYC8JfVXMrd\nrWdpCU1kLQKBgQC2YSiUPVVyDG5fogtz79ACDMDqseRC+he/Qf8Lfvi1TVw7E3Yk\nuRWlJfjkc9l1gdKhVmmeL98YX7rHSKmC81OaQ7l9OMMelVHcfgxGbB41IxnpUveF\nF26/OMH2mJGP1LeFpKq7ZPVIWEH2onQYM5uO9+8EaKUvEcGfYcIgoLwmfQKBgD8m\nmkhGcyTc0upfU9foZ9tea+Or7BoTOGrVTddvpMUK8aH+i9XJaEFQ1IFkNky9bsvZ\nQsRleSLkTlidLmdW7dWoyO7rUGYneXI7+6GdqCvwHjiE971x4MMzqgA0WPTrhceu\nNqkqaAPN6KZeFT7xjtfYY5nBEpAXy2pCQIkRpcetAoGAN3ZPM8QhS750dtPkTkRo\noBeqLKZS+H974BFu0JQWEmabDpfML/PtsNYiyibQvzRIeQ89uLE3yBX5ot81gDv5\nxH91Pk+goqfv94nfQ2slWNqEmOi2Z3959M5TzPJmlx402ANnI9EHbHdlCLwyDYs8\nVwWZvkePDn1oJRrlhh47bo8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "test-518@kubernetes-cafe.iam.gserviceaccount.com",
+  "client_id": "106375448759491933923",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/test-518%40kubernetes-cafe.iam.gserviceaccount.com"
+}
