@@ -16,7 +16,8 @@ exports.personMuffin = function (event, callback) {
 function processFile (bucket, file, callback) {
   const client = new vision.ImageAnnotatorClient()
   client.faceDetection(`gs://${bucket}/${file}`)
-    .then((faces) => {
+    .then((result) => {
+      faces = result[0].faceAnnotations
       console.log('number of faces', faces.length)
       if (faces.length === 1) {
         console.log('moving to valid')
